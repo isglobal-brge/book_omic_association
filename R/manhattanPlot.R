@@ -1,17 +1,17 @@
 # function created from https://www.r-graph-gallery.com/wp-content/uploads/2018/02/Manhattan_plot_in_R.html
 manhattanPlot <- function(x, colors=c("grey", "skyblue"),
-                          significanceLine = 8, 
+                          significantLine = 8, 
                           snpsOfInterest=NULL, ...) {
-
+  
   don <- x %>% 
     
     # Compute chromosome size
     group_by(CHR) %>% 
-    summarise(chr_len=max(BP)) %>% 
+    dplyr::summarise(chr_len=max(BP)) %>% 
     
     # Calculate cumulative position of each chromosome
     mutate(tot=cumsum(chr_len)-chr_len) %>%
-    select(-chr_len) %>%
+    dplyr::select(-chr_len) %>%
     
     # Add this info to the initial dataset
     left_join(x, ., by=c("CHR"="CHR")) %>%
@@ -25,7 +25,7 @@ manhattanPlot <- function(x, colors=c("grey", "skyblue"),
     mutate( is_annotate=ifelse(-log10(P)>8, "yes", "no")) 
   
   # Prepare X axis
-  axisdf <- don %>% group_by(CHR) %>% summarize(center=( max(BPcum) + min(BPcum) ) / 2 )
+  axisdf <- don %>% group_by(CHR) %>% dplyr::summarize(center=( max(BPcum) + min(BPcum) ) / 2 )
   
   # Make the plot
   ggplot(don, aes(x=BPcum, y=-log10(P))) +
