@@ -1,0 +1,30 @@
+---
+title: "Omic Association Studies with R and Bioconductor"
+author: "Juan R Gonzalez & Alejandro Caceres"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+output:
+  bookdown::gitbook: default
+  #bookdown::pdf_book: default
+---
+
+# Preface {-}
+
+![](figures/cover_book.png)
+
+
+The online material of this book is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. You can purchase a hardcopy from CRC Press [here](https://www.crcpress.com/Omic-Association-Studies-with-R-and-Bioconductor/Gonzalez-Caceres/p/book/9781138340565).
+
+## General overview {-}
+
+## Install required packages {-}
+
+## Datasets used in the book {-}
+
+
+
+
+# Introduction {#intro}
+
+# Chapter 1 {#chap1}
