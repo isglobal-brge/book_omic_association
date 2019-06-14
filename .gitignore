@@ -4,5 +4,5 @@
 .RData
 _publish.R
 _bookdown_files
-_book/libs
+_book
 rsconnect
