@@ -2,7 +2,7 @@
 This repository contains part of the material of the book "Omic association studies with R/Bioconductor" published by CRC Press. The 
 hardcopy including the main text and illustration can be purchased [here](https://www.crcpress.com/Omic-Association-Studies-with-R-and-Bioconductor/Gonzalez-Caceres/p/book/9781138340565).
 A bookdown describing the aim of the book and the specific content of each chapter and the R code used illustrate data analyses is
-available in this [link]().
+available in this [link](https://isglobal-brge.github.io/book_omic_association/).
 
 This repository includes (they can be accessed through the bookdown): 
 
