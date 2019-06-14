@@ -1,6 +1,6 @@
 # Outline
 This repository contains part of the material of the book "Omic association studies with R/Bioconductor" published by CRC Press. The 
-hard copy including the main text and illustration can be bougth [here](https://www.crcpress.com/Omic-Association-Studies-with-R-and-Bioconductor/Gonzalez-Caceres/p/book/9781138340565).
+hard copy including the main text and illustration can be bought [here](https://www.crcpress.com/Omic-Association-Studies-with-R-and-Bioconductor/Gonzalez-Caceres/p/book/9781138340565).
 A bookdown describing the aim of the book and the specific content of each chapter and the R code used illustrate data analyses is
 available in this [link]().
 
