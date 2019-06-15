@@ -4,7 +4,7 @@ hardcopy including the main text and illustration can be purchased [here](https:
 A bookdown describing the aim of the book and the specific content of each chapter and the R code used illustrate data analyses is
 available in this [link](https://isglobal-brge.github.io/book_omic_association/).
 
-This repository includes (they can be accessed through the bookdown): 
+This repository includes (they can be accessed through the [bookdown](https://isglobal-brge.github.io/book_omic_association/)): 
 
 - The R code to install the required packages to reproduce the results described in the book.
 - Some R functions created to improve visualization of the results obtained by different R and Bioconductor packages.
