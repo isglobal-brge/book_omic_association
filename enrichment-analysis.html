@@ -21,7 +21,7 @@
   
   
 
-<meta name="author" content="Juan R Gonzalez &amp; Alejandro Caceres" />
+<meta name="author" content="Juan R González &amp; Alejandro Cáceres" />
 
 
 <meta name="date" content="2019-06-15" />
@@ -63,10 +63,13 @@
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#book-summary"><i class="fa fa-check"></i>Book summary</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#book-overview"><i class="fa fa-check"></i>Book overview</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#install-required-packages"><i class="fa fa-check"></i>Install required packages</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#datasets-used-in-the-book"><i class="fa fa-check"></i>Datasets used in the book</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the authors</a></li>
+<li class="chapter" data-level="" data-path="acknowledgments.html"><a href="acknowledgments.html"><i class="fa fa-check"></i>Acknowledgments</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
 <li class="chapter" data-level="2" data-path="case-examples.html"><a href="case-examples.html"><i class="fa fa-check"></i><b>2</b> Case examples</a></li>
 <li class="chapter" data-level="3" data-path="dealing-with-omic-data-in-bioconductor.html"><a href="dealing-with-omic-data-in-bioconductor.html"><i class="fa fa-check"></i><b>3</b> Dealing with <em>omic</em> data in Bioconductor</a></li>
@@ -97,7 +100,11 @@
             <section class="normal" id="section-">
 <div id="enrichment-analysis" class="section level1">
 <h1><span class="header-section-number">10</span> Enrichment analysis</h1>
-<p>The <code>R</code> code to reproduce the results and figures of this chapter can be found <a href="https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch10.R">here</a>.</p>
+<p>In this chapter, we demonstrate how to perform enrichment analyses of <em>omic</em>-wise association analysis. The identification of single variables in <em>omic</em> data through massive univariate testing is clearly a simplistic approach to study biological systems that are inherently complex. Its strength resides in the scope and the easiness of the approach to identify landmarks in the data. A frequent result from these studies is the identification of several variables that are significantly associated with the phenotype of interest. In addition, as more individuals are included in the studies, more significant associations are identified. How do we make sense of the observed associations? Enrichment analyses try to answer the question of whether the emerging pattern of associations can be mapped to known biological functions.</p>
+<p>The are two predominantly used enrichment methods. One is known as over representation analysis (ORA) which tests whether a gene set contains disproportional many genes of significant expression change in a given gene set. The second method, called gene set enrichment analysis (GSEA), assesses whether genes of a gene set accumulate at the top or bottom of the full gene vector ordered by direction and magnitude of expression change. However, the term gene set enrichment analysis nowadays subsumes a general strategy implemented by a wide range of methods. Those methods have in common the same goal, although approach and statistical model can vary substantially. In this chapter we will focus on ORA approach which is commonly used in practice since it can be extended to any gene set as those defined, for instance, at Molecular Siganture Database (MSigDb).</p>
+<p>We illustrate the practical issues of the approach on the transcriptomic study of Alzheimer’s disease, discussed through the book. We particularly demonstrate how to annotate the results of the association analysis to the reference genome, using Bioconductor’s annotation databases (<code>.db</code>), how to map the results to biological functions curated in databases like GO and KEGG, and how to assess whether the mapping, or enrichment, is significant, using the Bioconductor’s package <code>GOstats</code> and <code>clusterProfiler</code>.</p>
+<p>We also outline how to perform these type of analysis in the CNV settings where the outcome is a list of genomic ranges instead of genes. In such situations, one can be insterested in deciphering whether the resulting CNV regions overlap with functional genomic regions such as genes, promoters, or enhancers. Finally, we explain the use of <code>CTDquerier</code> to study whether the significant associations are enriched in diseases and interactions with chemicals.</p>
+<p>The <code>R</code> code to reproduce the results and figures of this chapter can be found <a href="https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch9.R">here</a>.</p>
 </div>
             </section>
 

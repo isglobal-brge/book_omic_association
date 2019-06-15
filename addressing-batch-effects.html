@@ -21,7 +21,7 @@
   
   
 
-<meta name="author" content="Juan R Gonzalez &amp; Alejandro Caceres" />
+<meta name="author" content="Juan R González &amp; Alejandro Cáceres" />
 
 
 <meta name="date" content="2019-06-15" />
@@ -63,10 +63,13 @@
 
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#book-summary"><i class="fa fa-check"></i>Book summary</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#book-overview"><i class="fa fa-check"></i>Book overview</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#install-required-packages"><i class="fa fa-check"></i>Install required packages</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#datasets-used-in-the-book"><i class="fa fa-check"></i>Datasets used in the book</a></li>
 </ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the authors</a></li>
+<li class="chapter" data-level="" data-path="acknowledgments.html"><a href="acknowledgments.html"><i class="fa fa-check"></i>Acknowledgments</a></li>
 <li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
 <li class="chapter" data-level="2" data-path="case-examples.html"><a href="case-examples.html"><i class="fa fa-check"></i><b>2</b> Case examples</a></li>
 <li class="chapter" data-level="3" data-path="dealing-with-omic-data-in-bioconductor.html"><a href="dealing-with-omic-data-in-bioconductor.html"><i class="fa fa-check"></i><b>3</b> Dealing with <em>omic</em> data in Bioconductor</a></li>
@@ -97,7 +100,9 @@
             <section class="normal" id="section-">
 <div id="addressing-batch-effects" class="section level1">
 <h1><span class="header-section-number">6</span> Addressing batch effects</h1>
-<p>The <code>R</code> code to reproduce the results and figures of this chapter can be found <a href="https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch6.R">here</a>.</p>
+<p><em>Omic</em> data are the product of high throughput technologies that are affected by laboratory conditions, reagent lots and personnel. Biological systems are highly reactive on small changes in the surrounding physical an chemical conditions. Therefore, <em>omic</em> data depends on the date and place of processing as surrogate variables of uncontrolled conditions. Samples that are processed in the same laboratory and the same place will reflect such batch effect in their data. All types of <em>omic</em> data are affected by batch effects. While the effects can be mitigated by a suitable study design, they cannot be completely removed. Clearly, if all cases are processed together, their differences with controls cannot be teased apart from the batch effect. In addition, while statistical estimates can be adjusted by laboratory and date, there may be measurements in some genes that are more reactive than others and will be more subjected to confounding than others.</p>
+<p>In this chapter, we analyze already collected data and readers interested in collecting new data should refer to authors discussing the study design of specific <em>omic</em> studies. In this chapter, we illustrate how to detect and correct the batch effect, taking as an example transcriptomic data. We discuss how to detect unwanted variation in <em>omic</em> data from high throughput experiments using surrogate variable analysis (SVA). When batch effect variables have been reported then corrected datasets can be obtained using the ComBat algorithm.</p>
+<p>The <code>R</code> code to reproduce the results and figures of this chapter can be found <a href="https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch5.R">here</a>.</p>
 </div>
             </section>
 

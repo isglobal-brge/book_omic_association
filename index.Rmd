@@ -1,6 +1,6 @@
 ---
 title: "Omic Association Studies with R and Bioconductor"
-author: "Juan R Gonzalez & Alejandro Caceres"
+author: "Juan R González & Alejandro Cáceres"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -15,20 +15,54 @@ output:
 ![](figures/cover_book.png)
 
 
-The online material of this book is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. You can purchase a hardcopy from [CRC Press](https://www.crcpress.com/Omic-Association-Studies-with-R-and-Bioconductor/Gonzalez-Caceres/p/book/9781138340565) or [Amazon](https://www.amazon.es/Omic-Association-Studies-R-Bioconductor/dp/1138340561).
+The online material of this book is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. You can purchase a hardcopy from [CRC Press](https://www.crcpress.com/Omic-Association-Studies-with-R-and-Bioconductor/González-Cáceres/p/book/9781138340565) or [Amazon](https://www.amazon.es/Omic-Association-Studies-R-Bioconductor/dp/1138340561).
 
+
+## Book summary {-}
+
+After the great expansion of genome-wide association studies, their scientific methodology and, notably, their data analysis has matured in recent years, and they are a keystone in large epidemiological studies. Newcomers to the field are confronted with a wealth of data, resources and
+methods. This book presents current methods to perform informative analyses using real and illustrative data with established bioinformatics tools and guides the reader through the use of publicly available data. Includes clear, readable programming codes for readers to reproduce and
+adapt to their own data. Emphasises extracting biologically meaningful associations between traits of interest and genomic, transcriptomic and epigenomic data
+
+- Uses up-to-date methods to exploit omic data
+- Presents methods through specific examples and computing sessions
+- Supplemented by a website, including code, datasets, and solutions
 
 ## Book overview {-}
 
+The aim of the book is to offer a practical guide to researchers, graduate students and those interested in the analysis of _omic_ data. While our emphasis is on the use of data in publicly available repositories, the reader interested in analyzing novel data will find settled methods for inquiring into high-dimensional biological data. We have conceived the book as a first reference to tackle specific types of data, as well as a textbook for a bioinformatics course at the MSc level. Our objective is to demonstrate how to analyze genomic, transcriptomic, epigenomic and exposomic data to explain phenotypic differences among individuals. We describe the first analyses and methods of inquiry that should be used to identify the patterns in the data that associate with a trait of interest. During the past decade numerous methods have been developed and, due to the complexity of the data, we expect many more to be devised. Nonetheless, we describe some of the most established methods that are available in the Bioconductor and `R` repositories, which should constitute the first line of inquiry and to which future developments should be compared against.       
 
-This book is concerned with the analysis of high dimensional data that is acquired at specific biological domains. The aim of the analyses is the explanation of phenotypic differences among individuals. We, therefore, search for endogenous and exogenous factors that may influence such differences. The endogenous domains on which we turn our attention are those at the molecular level involving basic DNA structure and function, which have been labeled with the _omic_ suffix. In particular, we will describe current methods to analyze genomic data, which is high-dimensional at the gene (DNA sequence) level, transcriptomic data involving transcription of DNA into mRNA and epigenomic/methylomic data that relate to the epigenetic modifications of DNA. Many of the methods used at each domain overlap due to the biological nature and high dimensionality of data. However, important specificities remain, some derived from the acquisition of data and others from differences in the underlying biological processes. Within the exogenous domain, we study the high dimensional acquisition of exposure factors that are believed to influence the development or progression of individual traits.    
+The methods and applications described here are all publicly available and are accessible to anyone comfortable with fitting a linear regression model in `R`.  While we direct the reader to numerous introductory books in `R` and basic statistical methods, the present book is directed to users. From a basic user level, we aim to guide the readers to expand their toolkit in order to deal with _omic_ data with confidence.
+
+All the methods discussed here are part of our daily toolkit. We are regular users of all the methods and are also developers of many of them. The book is the result of compiling workshop and class material, of software package development and of years of research carried out in Juan R. González's Bioinformatics Group in Genetic Epidemiology, within ISGlobal. We have thus developed expertise in the use of the methods and in their communication, and have realized the need to offer a guide to new researchers in the field. There is a wealth of publicly available software and data, yet the landscape is overwhelming to newcomers. We offer them starting points from which to begin inquiring into the _omic_ data of interest. We do not offer a complete or global view but indicate safe up-to-date entry points. As developers of some of the packages discussed, we are committed, as part of the Bioconductor community, to offer clear and reproducible documentation, clarify doubts and update new versions. We insist that packages and pipelines to assist users are also implemented so they are further improved by other developers.     
+
+The material discussed in the book is largely based on cheap high-throughput methods. They include microarrays and some sequencing methods such as RNA-sequencing. We are also aware of the developments in the collection of new high-dimensional biological data, such as Next-Generation Sequencing or those aimed at single cells. There are, however, important advantages in the use and analysis of microarrays which will keep them relevant for many years. First, association studies require cohorts and technologies to be scalable to hundreds of thousands of individuals to properly power epidemiological inferences. Microarrays clearly meet the target. While we may conceive such scalability for future sequencing, the preprocessing of data may change but the basic methods of inference would likely remain the same. In addition, microarray data is widely available and it has been an important source of continuous reanalysis to test novel focused hypotheses, confirm new results or reproduce previous findings. Finally, SNPs arrays can be additionally used to explore other genomic variants, for which specific high-throughput technology is not yet available. Therefore, association analyses in large cohorts can be performed on inversion polymorphisms and mosaicism, including the loss of chromosome Y. 
+
 
 ## Install required packages {-}
 
 ## Datasets used in the book {-}
 
+# About the authors {-}
+
+**Juan R González** is an Associate Research Professor leading the Bioinformatics Research Group in
+Epidemiology (BRGE) at Barcelona Institute for Global Health (brge.isglobal.org, https://github.com/isglobal-brge). He has published extensively on methods and
+bioinformatics tools to detect structural variants from genomic data and to perform different types
+of omic association studies. Dr. González is the author of many R and Bioconductor packages
+including state-of-the-art libraries such as SNPassoc or MAD that have been used to discover new
+susceptibility genetic factor for complex diseases.
 
 
+**Alejandro Cáceres** is a Senior Statistician in the Bioinformatics Research Group in Epidemiology at
+Barcelona Institute for Global Health. He has large experience in developing new statistical methods
+to exploit genomic, transcriptomic and epigenomic data obtained from public repositories. Dr.
+Cáceres is the author of several R and Bioconductor packages that have been used, for instance, to
+study the role of polymorphic genomic inversions in complex diseases or to investigate how the
+downregulation of chromosome Y may affect age-related diseases.
+
+# Acknowledgments {-}
+
+This book is the result of the joint effort with other colleagues whom we have collaborated throughout the years. We would like to explicitly acknowledge and thank Carles Hernández-Ferrer, Marcos López and Carlos Ruiz who have contributed with their ideas, work and coding hours to the \R{} packages that we have developed at the BRGE and that are discussed within the book. We are thankful to them for starting their research careers with us and for the valuable input that they have given us through their PhD projects. Roger Pique-Regi is also acknowledged for his fruitful collaboration with the R-GADA package. We would also like to thank our colleagues and collaborators from whom we continuously learn, get encouragement and intellectual stimulation. We particularly would like to mention Luis Pérez-Jurado, Mariona Bustamante, Xavier Basagaña, Manolis Kogevinas, Jordi Sunyer and Martine Vrijheid, and all our colleagues from ISGlobal. We also would like to thank Tonu Esko from the Estonia Biobank for providing access to large amounts of data to test our methods, when data sharing was not a standard procedure.  Finally, we would like to acknowledge support from Ministerio de Economia y Competitividad y Fondo Europeo de Desarrollo (grant number MTM2015-68140-R), Ministerio de Ciencia e innovacion (grant numbers MTM2011-26515 and MTM2010-09526-E) and Ministerio de Educacion y Ciencia (grant number MTM2008-02457/MTM).
 
 # Introduction
 
@@ -64,39 +98,70 @@ The `R` code to reproduce the results and figures of this chapter can be found [
 
 # Genomic variant studies
 
-The `R` code to reproduce the results and figures of this chapter can be found [here](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch4_CNVs.R).
+In this chapter, we deal with genetic variants other than SNPs. As the proportion of genetic variation explained by SNPs for complex traits appears to be limited, more complex genetic variants are likely to play an important role in complex traits or disease susceptibility. We explain how SNP array data can be used to detect other structural variants (SV) such as copy number (CNV), genetic mosaicisms and polymorphic inversions. In particular, we discuss how CNVs and mosaicisms can be called using the log R ratio (LRR) and B-allele frequencies (BAF) of raw microarray data, and how polymorphic inversions can be called using SNP genotypes. We demonstrate how to assess its association with quantitative and qualitative outcomes. 
 
+
+
+The `R` code to reproduce the results and figures of this chapter can be found:
+
+- [here for CNVs and Genetic Mosaicism](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch4_CNVs.R).
+
+- [here for genetic inversions](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch4_Inversions.R).
 
 
 # Addressing batch effects
 
-The `R` code to reproduce the results and figures of this chapter can be found [here](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch6.R).
+
+_Omic_ data are the product of high throughput technologies that are affected by laboratory conditions, reagent lots and personnel. Biological systems are highly reactive on small changes in the surrounding physical an chemical conditions. Therefore, _omic_ data depends on the date and place of processing as surrogate variables of uncontrolled conditions.  Samples that are processed in the same laboratory and the same place will reflect such batch effect in their data. All types of _omic_ data are affected by batch effects. While the effects can be mitigated by a suitable study design, they cannot be completely removed. Clearly, if all cases are processed together, their differences with controls cannot be teased apart from the batch effect. In addition, while statistical estimates can be adjusted by laboratory and date, there may be measurements in some genes that are more reactive than others and will be more subjected to confounding than others.  
+
+In this chapter, we analyze already collected data and readers interested in collecting new data should refer to authors discussing the study design of specific _omic_ studies. In this chapter, we illustrate how to detect and correct the batch effect, taking as an example transcriptomic data. We discuss how to detect unwanted variation in _omic_ data from high throughput experiments using surrogate variable analysis (SVA). When batch effect variables have been reported then corrected datasets can be obtained using the ComBat algorithm. 
+
+
+The `R` code to reproduce the results and figures of this chapter can be found [here](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch5.R).
 
 
 
 # Transcriptomic studies
 
-The `R` code to reproduce the results and figures of this chapter can be found [here](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch7.R).
+The aim of transcriptome-wide association studies is to identify genes whose transcription volume associates with phenotypic differences among individuals. Transcription is measured from tRNA content in biological samples. The transcriptomic data are therefore high-dimensional measurements of the transcriptome under given conditions, such as tissue, age, health status or intervention stage. The transcriptome can be assessed using microarray data or RNA-sequencing (RNA-seq).  Microarray data depends on the probes used to detect the amount of transcription of a gene. While microarrays probe gene exons, initial data contains one probe per gene. The amount or intensity of hybridization to a gene's probe measures the transcription output of the gene. If more than one probe is available for a gene, a winsorized mean across probes is taken as the transcription measure of the gene. By contrast, RNA-seq is independent of the probes as it massively sequences short tRNA reads that are then mapped to known gene transcripts. The quantity of reads mapped to a gene is a measure of the transcription of the gene. In this chapter, we will analyze publicly available transcriptomic data based on microarray and RNA-seq experiments. We will discuss how to normalize both types of data and the methods to infer transcriptome-wide association studies.     
+
+
+The `R` code to reproduce the results and figures of this chapter can be found [here](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch6.R).
 
 
 
 # Epigenomic studies
 
-The `R` code to reproduce the results and figures of this chapter can be found [here](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch8.R).
+In this chapter, we analyze epigenomic data in the form of DNA methylation. Our aim is to identify sites where differences in methylation can help to explain phenotypic differences between individuals. Numerous methylomic datasets that are publicly available are from microarray experiments. Many methods for preprocessing data and performing association analysis are similar to those explained for transcriptomic data. However, important differences need to be taken into account, in particular, methylation of neighboring sites are correlated and, therefore, various approaches to test the association between methylomic data and phenotypic differences can be used. Some of the most common approaches are available through the Bioconductor package `MEAL`. Here, we demonstrate the use of the package on the GEO study of Alzheimer's disease GSE80970. We show how to perform different analyses within a single pipeline and how to extract, evaluate and plot results.  
+
+The `R` code to reproduce the results and figures of this chapter can be found [here](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch7.R).
 
 
 
 # Exposomic studies
 
-The `R` code to reproduce the results and figures of this chapter can be found [here](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch9.R).
+In this chapter, we study exposomic data. This type of data is different from the _omic_ data that we discussed in the previous chapters. To start, the exposure variables that constitute the dataset are measured with different experimental techniques. They are highly diverse and heterogeneous, as they may include biological assays, obtained from personal questionnaires or derived from inferred exposures at geolocalized sites. Nevertheless, organisms respond to environmental changes and their efficiency in the response may result in phenotypic differences that may lead to adaptation or disease.  The identification of the environmental changes is therefore essential to identify phenotypic differences among individuals and an unbiased scan on a large number of exposures is a starting point. In addition, exposure data may affect other molecular processes such as gene transcription or methylation. And therefore, important mechanisms may be discovered from the association between exposomic and transcriptomic, or methylomic data. Integration of _omic_ data is then required. From the analysis perspective, exposomic data can be treated as the previous _omic_ data, in which data structures are defined and methods are implemented on them. Here, we illustrate the use of  `rexposome`, a comprehensive Bioconductor package with functions to impute, normalize and characterize correlational structures in exposomic data, to perform exposome-wise association analysis (ExWAS) and to test the association between exposomic and other _omic_ variables. 
+
+The `R` code to reproduce the results and figures of this chapter can be found [here](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch8.R).
 
 
 
 # Enrichment analysis
 
-The `R` code to reproduce the results and figures of this chapter can be found [here](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch10.R).
+In this chapter, we demonstrate how to perform enrichment analyses of _omic_-wise association analysis. The identification of single variables in _omic_ data through massive univariate testing is clearly a simplistic approach to study biological systems that are inherently complex. Its strength resides in the scope and the easiness of the approach to identify landmarks in the data. A frequent result from these studies is the identification of several variables that are significantly associated with the phenotype of interest.  In addition, as more individuals are included in the studies, more significant associations are identified. How do we make sense of the observed associations? Enrichment analyses try to answer the question of whether the emerging pattern of associations can be mapped to known biological functions. 
+
+The are two predominantly used enrichment methods. One is known as over representation analysis (ORA) which tests whether a gene set contains disproportional many genes of significant expression change in a given gene set. The second method, called gene set enrichment analysis (GSEA), assesses whether genes of a gene set accumulate at the top or bottom of the full gene vector ordered by direction and magnitude of expression change. However, the term gene set enrichment analysis nowadays subsumes a general strategy implemented by a wide range of methods. Those methods have in common the same goal, although approach and statistical model can vary substantially. In this chapter we will focus on ORA approach which is commonly used in practice since it can be extended to any gene set as those defined, for instance, at Molecular Siganture Database (MSigDb). 
+
+We illustrate the practical issues of the approach on the transcriptomic study of Alzheimer's disease, discussed through the book. We particularly demonstrate how to annotate the results of the association analysis to the reference genome, using Bioconductor's annotation databases (`.db`), how to map the results to biological functions curated in databases like GO and KEGG, and how to assess whether the mapping, or enrichment, is significant, using the Bioconductor’s package `GOstats` and `clusterProfiler`. 
+
+We also outline how to perform these type of analysis in the CNV settings where the outcome is a list of genomic ranges instead of genes. In such situations, one can be insterested in deciphering whether the resulting CNV regions overlap with functional genomic regions such as genes, promoters, or enhancers. Finally, we explain the use of `CTDquerier` to study whether the significant associations are enriched in diseases and interactions with chemicals.  
+
+
+The `R` code to reproduce the results and figures of this chapter can be found [here](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/ch9.R).
 
 
 # Multiomic data analysis
 
-The `R` code to reproduce the results and figures of this chapter can be found [here](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/c11.R).
+The objective of the present chapter is to introduce some approaches to analyze studies with multiomic data. These are studies that, for instance, have collected genomic, transcriptomic and exposomic data, or other types of _omic_ data, on the same individuals. The volume of the data allows for multiple and complex relationships within and between the datasets. The broad objective is therefore to identify the relationships that are derived from underlying biological mechanisms. The field is wide open and while many types of analysis can be applied, and will be developed, we keep an eye on those that allow us to explain phenotypic differences between individuals. We demonstrate specific examples comprising two different approaches, namely multi-staged and meta-dimensional analyses. 
+
+The `R` code to reproduce the results and figures of this chapter can be found [here](https://github.com/isglobal-brge/book_omic_association/blob/master/R_chunks/c10.R).
