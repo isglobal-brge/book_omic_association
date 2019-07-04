@@ -15,7 +15,7 @@ output:
 ![](figures/cover_book.png)
 
 
-The online material of this book is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. You can purchase a hardcopy from [CRC Press](https://www.crcpress.com/Omic-Association-Studies-with-R-and-Bioconductor/González-Cáceres/p/book/9781138340565) or [Amazon](https://www.amazon.es/Omic-Association-Studies-R-Bioconductor/dp/1138340561).
+The online material of this book is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. You can purchase a hardcopy from [CRC Press](https://www.crcpress.com/Omic-Association-Studies-with-R-and-Bioconductor/Gonzalez-Caceres/p/book/9781138340565) or [Amazon](https://www.amazon.es/Omic-Association-Studies-R-Bioconductor/dp/1138340561).
 
 
 ## Book summary {-}
