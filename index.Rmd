@@ -39,13 +39,15 @@ All the methods discussed here are part of our daily toolkit. We are regular use
 The material discussed in the book is largely based on cheap high-throughput methods. They include microarrays and some sequencing methods such as RNA-sequencing. We are also aware of the developments in the collection of new high-dimensional biological data, such as Next-Generation Sequencing or those aimed at single cells. There are, however, important advantages in the use and analysis of microarrays which will keep them relevant for many years. First, association studies require cohorts and technologies to be scalable to hundreds of thousands of individuals to properly power epidemiological inferences. Microarrays clearly meet the target. While we may conceive such scalability for future sequencing, the preprocessing of data may change but the basic methods of inference would likely remain the same. In addition, microarray data is widely available and it has been an important source of continuous reanalysis to test novel focused hypotheses, confirm new results or reproduce previous findings. Finally, SNPs arrays can be additionally used to explore other genomic variants, for which specific high-throughput technology is not yet available. Therefore, association analyses in large cohorts can be performed on inversion polymorphisms and mosaicism, including the loss of chromosome Y. 
 
 
-## Install required packages {-}
-
 ## Datasets used in the book {-}
+
+Most of the datasets described in the book can be donwloaded from public data repositories. Some of them are available at https://github.com/isglobal-brge/book_omic_association/tree/master/data
+
+
 
 # About the authors {-}
 
-**Juan R González** is an Associate Research Professor leading the Bioinformatics Research Group in
+**Juan R Gonzalez** is an Associate Research Professor leading the Bioinformatics Research Group in
 Epidemiology (BRGE) at Barcelona Institute for Global Health (brge.isglobal.org, https://github.com/isglobal-brge). He has published extensively on methods and
 bioinformatics tools to detect structural variants from genomic data and to perform different types
 of omic association studies. Dr. González is the author of many R and Bioconductor packages
@@ -53,10 +55,10 @@ including state-of-the-art libraries such as SNPassoc or MAD that have been used
 susceptibility genetic factor for complex diseases.
 
 
-**Alejandro Cáceres** is a Senior Statistician in the Bioinformatics Research Group in Epidemiology at
+**Alejandro Caceres** is a Senior Statistician in the Bioinformatics Research Group in Epidemiology at
 Barcelona Institute for Global Health. He has large experience in developing new statistical methods
 to exploit genomic, transcriptomic and epigenomic data obtained from public repositories. Dr.
-Cáceres is the author of several R and Bioconductor packages that have been used, for instance, to
+Caceres is the author of several R and Bioconductor packages that have been used, for instance, to
 study the role of polymorphic genomic inversions in complex diseases or to investigate how the
 downregulation of chromosome Y may affect age-related diseases.
 
