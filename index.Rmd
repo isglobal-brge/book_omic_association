@@ -1,6 +1,6 @@
 ---
 title: "Omic Association Studies with R and Bioconductor"
-author: "Juan R González & Alejandro Cáceres"
+author: "Juan R Gonzalez & Alejandro Caceres"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
